@@ -1,3 +1,4 @@
+<!-- 7. -->
 <fieldset style="width:50%;margin:auto">
     <legend>會員登入</legend>
     <table style="width:100%">
@@ -23,6 +24,7 @@
 </fieldset>
 
 <script>
+    // 7.3則顯示「查無帳號」或「密碼錯誤」訊息
     function login() {
         // 取得帳號輸入框的值
         let acc = $("#acc").val()

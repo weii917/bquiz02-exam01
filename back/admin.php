@@ -1,3 +1,4 @@
+<!-- 10 建置帳號後台管理-->
 <fieldset>
     <legend>帳號管理</legend>
     <form action="./api/edit_user.php" method="post">
@@ -31,7 +32,7 @@
             <input type="submit" value="確定刪除"><input type="reset" value="清空選取">
         </div>
     </form>
-
+<!-- 10.2後台新增帳號 -->
     <h2>新增會員</h2>
     <span style="color:red ">*請設定您要註冊的帳號及密碼(最長12個字元)</span>
     <table>

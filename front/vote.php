@@ -1,4 +1,5 @@
 <?php
+// 13.4點選「參與投票」可顯示該問卷的詳細內容
 $que = $Que->find($_GET['id']);
 ?>
 <fieldset>

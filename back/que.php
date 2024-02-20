@@ -1,3 +1,4 @@
+<!-- 14.建置問卷後台管理 -->
 <fieldset>
     <legend>新增問卷</legend>
     <form action="./api/add_que.php" method="post">
@@ -19,6 +20,8 @@
     </form>
 
 </fieldset>
+<!-- 14.5問卷列表的功能，可以列出目前正在進行中的問卷題目 -->
+<!-- 14.6 問卷列表提供開放/關閉的功能，設為＂開放＂時，則可以在前台看到並進行投票；設為＂關閉＂時，則前台無法看到該份問卷．-->
 <fieldset>
     <legend>問卷列表 </legend>
     <button onclick="location.href='?do=addnews'">新增文章</button>
@@ -42,7 +45,7 @@
                     <td><?= $row['text'] ?></td>
                     <td><?= $row['vote'] ?></td>
                     <td>
-                        <button class="show-btn" data-id="<?= $row['id']; ?>"><?= ($row['sh'] == 1) ? '開放' : '隱藏'; ?></button>
+                        <button class="show-btn" data-id="<?= $row['id']; ?>"><?= ($row['sh'] == 1) ? '開放' : '關閉'; ?></button>
                         <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
 
                     </td>

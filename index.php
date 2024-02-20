@@ -31,17 +31,19 @@ include_once "./api/db.php";
 <body>
 
 	<div id="all">
+		<!-- 2.2, 2.3, 2.4 -->
 		<div id="title">
 			<?= date("m月d日l"); ?> |
 			今日瀏覽: <?= $Total->find(['date' => date('Y-m-d')])['total']; ?> |
 			累積瀏覽: <?= $Total->sum('total'); ?>
 			<a href="index.php" style="float:right">回首頁</a>
 		</div>
-
+		<!-- 2.1 -->
 		<div id="title2">
 			<a href="index.php"><img src="./icon/02B01.jpg" title="健康促進網－回首頁"></a>
 		</div>
 		<div id="mm">
+			<!-- 3 -->
 			<div class="hal" id="lef">
 				<a class="blo" href="index.php">回首頁</a>
 				<a class="blo" href="?do=news">最新文章</a>
@@ -49,6 +51,7 @@ include_once "./api/db.php";
 			</div>
 			<div class="hal" id="main">
 				<div>
+					<!-- 7.2 歡迎，test 登出-->
 					<marquee style="width:78%">請民眾踴躍投稿電子報，讓電子報成為大家相互交流、分享的園地!詳見最新文章</marquee>
 					<span style="width:18%; display:inline-block;">
 						<?php

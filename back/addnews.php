@@ -1,3 +1,4 @@
+<!-- 12.1 設計㇐個新增文章的功能，可以輸入標題及文章內容，選取文章的分類後，進行新增 -->
 <fieldset>
     <legend>新增文章</legend>
     <form action="./api/add_news.php" method="post">

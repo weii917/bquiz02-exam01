@@ -31,6 +31,7 @@ include_once "./api/db.php";
 			<a href="index.php"><img src="./icon/02B01.jpg" title="健康促進網－回首頁"></a>
 		</div>
 		<div id="mm">
+			<!-- 9.1 後台管理選單包括「帳號管理」、「最新文章管理」及「問卷管理」等３項目-->
 			<div class="hal" id="lef">
 				<a class="blo" href="?do=admin">帳號管理</a>
 				<a class="blo" href="?do=news">最新文章</a>

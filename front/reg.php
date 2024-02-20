@@ -1,3 +1,4 @@
+<!-- 8.1 點選「尚未註冊 -->
 <fieldset style="width:50%;margin:auto">
     <legend>會員註冊</legend>
     <span style="color:red ">*請設定您要註冊的帳號及密碼(最長12個字元)</span>

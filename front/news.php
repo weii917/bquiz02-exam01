@@ -1,3 +1,4 @@
+<!-- 11 建置最新文章區-->
 <fieldset>
     <legend>目前位置:首頁 > 最新文章區 </legend>
     <table>
@@ -29,7 +30,7 @@
                     </div>
                 </td>
                 <td>
-
+                <!-- 7.5，登入的使用者可以點選 讚或收回讚 -->
                     <?php
                     if (isset($_SESSION['user'])) {
                         if ($Log->count(['news' => $row['id'], 'acc' => $_SESSION['user']]) > 0) {
@@ -66,7 +67,7 @@
         ?>
     </div>
 </fieldset>
-
+<!-- 7.4可點選文章顯示詳細內容 -->
 <script>
     //對class title進行點擊事件註冊   
     $(".title").on("click", (e) => {
