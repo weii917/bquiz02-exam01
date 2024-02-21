@@ -4,7 +4,7 @@
     <form action="./api/add_news.php" method="post">
         <div style="width:80%;padding-left:50px;margin:auto">
             <div>
-                <div style="display: flex; align-items:center;"><label for="">文章標題</label>
+                <div style="display: flex; align-items:center;">文章標題
                     <input style="width:70%" type="text" name="title" id="">
                 </div>
             </div>
