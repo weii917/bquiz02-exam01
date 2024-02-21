@@ -32,7 +32,7 @@
             <input type="submit" value="確定刪除"><input type="reset" value="清空選取">
         </div>
     </form>
-<!-- 10.2後台新增帳號 -->
+    <!-- 10.2後台新增帳號 -->
     <h2>新增會員</h2>
     <span style="color:red ">*請設定您要註冊的帳號及密碼(最長12個字元)</span>
     <table>
@@ -61,6 +61,37 @@
         </tr>
     </table>
 
+    <script>
+        function reg() {
+            user = {
+                acc: $("#acc").val(),
+                pw: $("#pw").val(),
+                pw2: $("#pw2").val(),
+                email: $("#email").val(),
+            }
 
-    由於後台的新增會員和前台的註冊會員是幾乎一樣的功能，因此可以直接把註冊會員的功能直接複製過來使用即可
+            if (user.acc != '' && user.pw != '' && user.pw2 != '' && user.email != '') {
+                if (user.pw == user.pw2) {
+                    $.post("./api/chk_acc.php", {
+                        acc: user.acc
+                    }, (res) => {
+                        if (parseInt(res) == 1) {
+                            alert("帳號重複")
+                        } else {
+                            $.post("./api/reg.php", user, (res) => {
+
+                                location.reload();
+                            })
+                        }
+                    })
+                } else {
+                    alert("密碼錯誤")
+                }
+            } else {
+                alert("不可空白")
+            }
+
+
+        }
+    </script>
 </fieldset>
